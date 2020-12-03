@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        style="@style/LinearLayoutStandard"
+        android:padding="32dp"
+        android:gravity="center">
+
+        <ImageView
+            style="@style/ImageViewSmall"
+            android:src="@drawable/image_enter_code_2"/>
+
+        <TextView
+            style="@style/TextView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:padding="16dp"
+            android:text="@string/verification_title"/>
+
+        <TextView
+            style="@style/TextView"
+            android:gravity="center"
+            android:text="@string/verification_description"/>
+
+        <TextView
+            style="@style/TextView"
+            android:id="@+id/textViewNumber"
+            android:gravity="center"
+            tools:text="+7ХХХХХХХХХХ"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal">
+
+            <EditText
+                style="@style/EditText.OTP"
+                android:id="@+id/otpEditText1"/>
+
+            <EditText
+                style="@style/EditText.OTP"
+                android:id="@+id/otpEditText2"/>
+
+            <EditText
+                style="@style/EditText.OTP"
+                android:id="@+id/otpEditText3"/>
+
+            <EditText
+                style="@style/EditText.OTP"
+                android:id="@+id/otpEditText4"/>
+
+            <EditText
+                style="@style/EditText.OTP"
+                android:id="@+id/otpEditText5"/>
+
+            <EditText
+                style="@style/EditText.OTP"
+                android:id="@+id/otpEditText6"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextView"
+            android:id="@+id/textResendSMS"
+            android:enabled="false"
+            android:paddingTop="16dp"
+            android:textSize="12sp"
+            tools:text="@string/resend_sms"
+            android:textStyle="italic"
+            />
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageEnterCodeBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:src="@drawable/ic_navigation_back"/>
+
+</FrameLayout>

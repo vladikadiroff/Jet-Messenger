@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "670450471973",
+    "firebase_url": "https://jet-messenger-f46da.firebaseio.com",
+    "project_id": "jet-messenger-f46da",
+    "storage_bucket": "jet-messenger-f46da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670450471973:android:1c2cffb80f4b4fa24e5bcc",
+        "android_client_info": {
+          "package_name": "ru.vladikadiroff.jetmessenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "670450471973-98ps6k0678440qbp24nmv5us27lo1m25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgb4YgzFcwWj6UjdSmNwwWmOEUk3dc4OQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "670450471973-98ps6k0678440qbp24nmv5us27lo1m25.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="ru.vladikadiroff.jetmessenger.ui.fragments.auth.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment2"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/anim_shake"
+            app:exitAnim="@anim/anim_shake"
+            app:popEnterAnim="@anim/anim_shake"
+            app:popExitAnim="@anim/anim_shake" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ru.vladikadiroff.jetmessenger.ui.fragments.auth.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_fragmentEnterCode"
+            app:destination="@id/fragmentEnterCode" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentEnterCode"
+        android:name="ru.vladikadiroff.jetmessenger.ui.fragments.auth.EnterCodeFragment"
+        android:label="FragmentEnterCode"
+        tools:layout="@layout/fragment_enter_code"/>
+</navigation>

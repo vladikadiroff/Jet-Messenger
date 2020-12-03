@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="Notification"
+        android:layout="@layout/prefs_category">
+        <SwitchPreferenceCompat
+            android:key = "push"
+            android:icon="@drawable/ic_notification"
+            android:title="Push Notification"
+            android:defaultValue = "true"
+            android:layout="@layout/prefs_switch"/>
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title = "App Permissions"
+        android:layout="@layout/prefs_category">
+
+        <SwitchPreferenceCompat
+            android:icon="@drawable/ic_password"
+            android:key = "camera"
+            android:title = "Camera"
+            android:summary = "Needed for stories and on spot posting"
+            android:defaultValue = "true"
+            android:layout="@layout/prefs_switch"/>
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_phone"
+            android:key="location"
+            android:title = "Location"
+            android:summary="Needed for location adding on post"
+            android:defaultValue = "false"
+            android:layout="@layout/prefs_switch"/>
+
+
+    </PreferenceCategory>
+
+
+
+
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/LinearLayoutStandard"
+    android:gravity="center_vertical">
+
+
+    <ImageView
+        style="@style/ImageViewLogo"
+        android:layout_marginBottom="32dp"
+        android:layout_gravity="center"
+        android:src="@drawable/image_app" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/LoginTitleText"
+        android:paddingBottom="72dp"
+        android:text="@string/login_title"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/TextInputLayout"
+        android:id="@+id/textInputLayoutPhone"
+        android:layout_gravity="center_horizontal"
+        app:startIconDrawable="@drawable/ic_phone"
+        android:hint="@string/hint_phone_number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/EditText.LoginEditText"
+            android:id="@+id/editTextPhone"
+            android:inputType="phone" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/LoginButton"
+        android:id="@+id/buttonLogin"
+        android:text="@string/login_button"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+</LinearLayout>

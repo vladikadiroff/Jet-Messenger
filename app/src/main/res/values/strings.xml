@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Jet Messenger</string>
+    <string name="hint_password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="hint_phone_number">Phone</string>
+    <string name="login_title">Jet Messenger Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="error_empty_field">The field is doesnt be empty</string>
+    <string name="verification_description">Please type verification code sent to</string>
+    <string name="verification_title">Verification Code</string>
+    <string name="resend_sms_timer">Resend SMS in %s sec.</string>
+    <string name="resend_sms">Resend SMS?</string>
+    <string name="settings">Settings</string>
+</resources>
